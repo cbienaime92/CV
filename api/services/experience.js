@@ -1,10 +1,11 @@
-const Formation = require('../models/formation');
+const Experience = require('../models/experience');
 
 exports.getall = async (req, res, next) => {
     try {
-        let formation = await Formation.find();
-        if (formation) {
-            return res.status(200).json(formation);
+        let experience = await Experience.find();
+        if (experience) {
+            console.log(res.status(200).json(experience))
+            return res.status(200).json(experience);
         }
 
     }
@@ -17,13 +18,13 @@ exports.getById = async (req, res, next) => {
     const { id } = req.params;
 
     try {
-        let formation = await Formation.findById(id);
+        let experience = await Experience.findById(id);
 
-        if (formation) {
-            return res.status(200).json(formation);
+        if (experience) {
+            return res.status(200).json(experience);
         }
 
-        return res.status(404).json('formation_not_found');
+        return res.status(404).json('experience_not_found');
     } catch (error) {
         return res.status(501).json(error);
     }
@@ -36,15 +37,17 @@ exports.add = async (req, res, next) => {
         nom: temp.nom,
         anneeDebut: temp.anneeDebut,
         anneeFin: temp.anneeFin,
-        organisme: temp.organisme
+        societe: temp.societe,
+        taches: temp.taches
+
     } = req.body);
 
     Object.keys(temp).forEach((key) => (temp[key] == null) && delete temp[key]);
 
     try {
-        let formation = await Formation.create(temp);
+        let experience = await Experience.create(temp);
 
-        return res.status(201).json(formation);
+        return res.status(201).json(experience);
     } catch (error) {
         return res.status(501).json(error);
     }
@@ -57,24 +60,25 @@ exports.update = async (req, res, next) => {
         nom: temp.nom,
         anneeDebut: temp.anneeDebut,
         anneeFin: temp.anneeFin,
-        organisme: temp.organisme
+        societe: temp.societe,
+        taches: temp.taches
     } = req.body);
 
     try {
-        let formation = await Formation.findOne({ email: temp.email });
+        let experience = await Experience.findOne({ email: temp.email });
 
-        if (formation) {
+        if (experience) {
             Object.keys(temp).forEach((key) => {
                 if (!!temp[key]) {
-                    formation[key] = temp[key];
+                    experience[key] = temp[key];
                 }
             });
 
-            await formation.save();
-            return res.status(201).json(formation);
+            await experience.save();
+            return res.status(201).json(experience);
         }
 
-        return res.status(404).json('formation_not_found');
+        return res.status(404).json('experience_not_found');
     } catch (error) {
         console.log(error)
         return res.status(501).json(error);
@@ -85,7 +89,7 @@ exports.delete = async (req, res, next) => {
     const { id } = req.body;
 
     try {
-        await Formation.deleteOne({ _id: id });
+        await Experience.deleteOne({ _id: id });
 
         return res.status(201).json('delete_ok');
     } catch (error) {

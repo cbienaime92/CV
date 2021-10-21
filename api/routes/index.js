@@ -3,6 +3,8 @@ var router = express.Router();
 
 
 const formationController = require('./formation');
+const experienceController = require('./experience');
+const contactController = require('./contact');
 
 
 router.get('/', async (req, res) => {
@@ -15,5 +17,7 @@ router.get('/', async (req, res) => {
 });
 
 router.use('/formation', formationController);
+router.use('/experience', experienceController);
+router.use('/contact', contactController);
 
 module.exports = router;

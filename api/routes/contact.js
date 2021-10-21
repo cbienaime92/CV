@@ -1,11 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const service = require('../services/formation');
+const service = require('../services/contact');
 
 router.get('/', service.getall);
 
 router.get('/:id', service.getById);
+
+router.get('/nom/:nom',service.getByName)
 
 router.put('/add', service.add);
 

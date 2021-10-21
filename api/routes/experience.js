@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const service = require('../services/formation');
+const service = require('../services/experience');
 
 router.get('/', service.getall);
 
