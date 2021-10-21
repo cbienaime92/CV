@@ -35,6 +35,7 @@ function ListExperiences() {
         {
           experiences.map(experience => (
             <Experience experience={experience} key={experience._id} />
+            
           ))}
 
       </ul >

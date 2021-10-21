@@ -5,6 +5,8 @@ import PhoneIcon from "@material-ui/icons/Phone"
 import MailIcon from "@material-ui/icons/Mail"
 import EventIcon from "@material-ui/icons/Event"
 import LocationOnIcon from "@material-ui/icons/LocationOn"
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
+
 import axios from 'axios'
 
 function User() {
@@ -44,7 +46,10 @@ function User() {
         <p className="user__info">
           <MailIcon /> <a href="mailto:{user.email}">{user.email}</a>
         </p>
-        
+        <p className="user__info">
+          <DirectionsCarIcon />{user.permis}
+        </p>
+                
       </div>
     </div>
   )
