@@ -27,9 +27,24 @@ services:
     volumes:
       - "./api:/var/www"  
     ports:
-      - "5000:3000"
+      - "5000:5000"
     links:
       - mongo
     command: bash -c "cd /var/www && ./node_modules/.bin/pm2 start startup.json --name API --no-daemon"
     environment: 
       - URL_MONGO=mongodb://api:docker1234@mongo
+
+  react:
+    image: node:latest
+    restart: always 
+    volumes:
+      - "./front:/var/www"  
+    ports:
+      - "3000:3000"
+    stdin_open: true
+
+    links:
+      - node
+      - mongo
+    command: bash -c "cd /var/www && npm start"
+   
