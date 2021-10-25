@@ -7,10 +7,10 @@ router.get('/', service.getall);
 
 router.get('/:id', service.getById);
 
-router.put('/add', service.add);
+router.post('/add', service.add);
 
 router.patch('/update', service.update);
 
-router.delete('/delete', service.delete);
+router.delete('/delete/:id', service.delete);
 
 module.exports = router;

@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
+
 
 const clientOptions = {
     socketTimeoutMS   : 30000,

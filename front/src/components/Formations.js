@@ -1,6 +1,21 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import axios from 'axios'
 
-function Formation({ formation }) {
+//import { Button, TextField, DialogActions, Dialog, DialogContent, DialogTitle, IconButton } from '@mui/material';
+import { IconButton } from '@mui/material';
+// import { AccessAlarm, AddCircleOutlineIcon } from '@mui/icons-material';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+
+
+
+
+function Formation({ formation, sendDataToParent }) {
+
+  const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+
+  };
 
 
   return (
@@ -20,6 +35,11 @@ function Formation({ formation }) {
         </div>
         <div className="grid__item">
           <p className="grid__title">{formation.organisme}</p>
+          <IconButton color="primary" aria-label="upload picture" component="span" onClick={() => {
+              sendDataToParent(formation._id);
+            }}>
+              <AddCircleOutlineIcon  />
+            </IconButton>
         </div>
       </div>
     </li>

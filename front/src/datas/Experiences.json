@@ -1,0 +1,67 @@
+[
+    {
+        "nom": "Développeur Full-stack d’applications web",
+        "anneeDebut": 2020,
+        "anneeFin": 2020,
+        "societe": "LAVOIX - Paris",
+        "taches": [
+            {
+                "taches": [
+                    "Développement de modules pour l’intranet de la société en VueJS / C# /Oracle"
+                ],
+                "nom": ""
+            }
+        ]
+    },
+    {
+        "nom": "Développeur Full-stack d’applications",
+        "anneeDebut": 2018,
+        "anneeFin": 2019,
+        "societe": "SIGT – Paris",
+        "taches": [
+            {
+                "taches": [
+                    "Développement d’applications dans le domaine de transport public de voyageurs en ASP.Net / C# / Javascript/ Ajax / MsSQL"
+                ],
+                "nom": ""
+            }
+        ]
+    },
+    {
+        "nom": "Administrateur Systèmes et Réseaux",
+        "anneeDebut": 2005,
+        "anneeFin": 2018,
+        "societe": "SIGT – Paris",
+        "taches": [
+            {
+                "taches": [
+                    "Elaboration du réseau d’entreprise du groupe PROLOG INGENIERIE",
+                    "Étude et mise en place d’un plan de sauvegarde complet des données du groupe (interne et hors site) – Veeam Backup",
+                    "Étude, conception et mise en place d’un plan de reprise d’activité et plan de continuité d’activité (PRA/PCA)",
+                    "Virtualisation de serveurs avec haute disponibilité – Vmware,Vcenter, Vsphere"
+                ],
+                "nom": "Etudes et conceptions"
+            },
+            {
+                "taches": [
+                    "Serveurs web - Apache et IIS, Windows / Linux (Debian)",
+                    "Bases de données - MSSql 2008 – 2014, MySQL, PosGreSQL",
+                    "Mise en place de réseaux VPN inter-sites et nomades",
+                    "Installation d’un réseau Active Directory, DNS et DHCP - Windows 2008, 2012R2",
+                    "serveurs de Calcul pour logiciels hydraulique- Infoworks, Flow3D",
+                    "Installation de serveurs de Gestion de sources logicielles"
+                ],
+                "nom": "Installation et administration de serveurs"
+            },
+            {
+                "taches": [
+                    "Responsable de processus informatique ISO 9001",
+                    "Administration du parc informatique",
+                    "Responsable d’équipe",
+                    "Support utilisateur"
+                ],
+                "nom": "Gestion quotidienne"
+            }
+        ]
+    }
+]

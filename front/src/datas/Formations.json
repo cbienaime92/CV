@@ -1,0 +1,32 @@
+[
+    {
+        "nom": "Formation Développeur .NET (C#, MVC, JS)",
+        "anneeDebut": 2021,
+        "anneeFin": 2021,
+        "organisme": "ENI"
+    },
+    {
+        "nom": "Formation DevOps",
+        "anneeDebut": 2020,
+        "anneeFin": 2020,
+        "organisme": "GRETA"
+    },
+    {
+        "nom": "Formation développeur Application Web .NET (ASP, C#,Javascript)",
+        "anneeDebut": 2015,
+        "anneeFin": 2015,
+        "organisme": "ORSYS"
+    },
+    {
+        "nom": "FCIL Formation d’administration Réseau ENS",
+        "anneeDebut": 2002,
+        "anneeFin": 2003,
+        "organisme": "ENS – Cachan"
+    },
+    {
+        "nom": "DEUST AMRL",
+        "anneeDebut": 2000,
+        "anneeFin": 2002,
+        "organisme": "Université d’Orsay"
+    }
+]

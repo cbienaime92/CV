@@ -9,17 +9,20 @@ function Profil() {
 
   useEffect(
     () => {
-      axios.get("http://localhost:5000/profil/")
+      axios.get(
+        // "http://localhost:5000/profil/"
+      `${process.env.REACT_APP_API_URL}/profil/`
+      )
         .then(
           (response) => {
-            console.log(response)
+   
 
             setProfil(response.data)
           }
         )
         .catch(
           (err) => {
-            console.log("ERREUR: ", err)
+           
           }
         )
 
@@ -29,13 +32,13 @@ function Profil() {
   return (
     <div className="profil mb5">
       <h2>Profil</h2>
-      
-      { profil.map(experience => (
-        <p>
-        {experience.intitule}
+
+      {profil.map(profil => (
+        <p  key={profil._id}>
+          {profil.intitule}
         </p>
       ))}
-      
+
     </div>
   )
 }

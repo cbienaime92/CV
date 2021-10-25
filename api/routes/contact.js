@@ -9,7 +9,7 @@ router.get('/:id', service.getById);
 
 router.get('/nom/:nom',service.getByName)
 
-router.put('/add', service.add);
+router.post('/add', service.add);
 
 router.patch('/update', service.update);
 

@@ -7,7 +7,7 @@ router.get('/', service.getall);
 
 router.get('/:id', service.getById);
 
-router.put('/add', service.add);
+router.post('/add', service.add);
 
 router.patch('/update', service.update);
 

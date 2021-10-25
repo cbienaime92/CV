@@ -23,11 +23,11 @@ function Experience({ experience }) {
         <div className="grid__item">
         <ul>
           {experience.taches.map(item => (
-            <li>
+            <li key={item._id}>
               {item.nom}
               <ul>
-                {item.taches.map(res => (
-                  <li>
+                {item.taches.map((res, index) => (
+                  <li key={index}>
                     {res}
 
                   </li>

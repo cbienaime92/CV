@@ -14,17 +14,20 @@ function User() {
 
   useEffect(
     () => {
-      axios.get("http://localhost:5000/contact/nom/BIENAIME")
+      axios.get(
+        // "http://localhost:5000/contact/nom/BIENAIME"
+        `${process.env.REACT_APP_API_URL}/contact/nom/BIENAIME`
+        )
         .then(
           (response) => {
-            console.log(response)
+       
 
             setUser(response.data)
           }
         )
         .catch(
           (err) => {
-            console.log("ERREUR: ", err)
+         
           }
         )
 

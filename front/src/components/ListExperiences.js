@@ -8,17 +8,20 @@ function ListExperiences() {
 
   useEffect(
     () => {
-      axios.get("http://localhost:5000/experience/")
+      axios.get(
+        `${process.env.REACT_APP_API_URL}/experience/`
+        // "http://localhost:5000/experience/"
+      )
         .then(
           (response) => {
-            console.log(response)
+
 
             setExperiences(response.data)
           }
         )
         .catch(
           (err) => {
-            console.log("ERREUR: ", err)
+
           }
         )
 
@@ -35,7 +38,6 @@ function ListExperiences() {
         {
           experiences.map(experience => (
             <Experience experience={experience} key={experience._id} />
-            
           ))}
 
       </ul >
