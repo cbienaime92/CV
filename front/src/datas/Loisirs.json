@@ -1,0 +1,19 @@
+[
+    {
+        "details": [
+            "Course à pied (marathon)",
+            "natation",
+            "Trekking (GR20, GR10,TMB, Kilimandjaro)"
+        ],
+        "nom": "sport"
+    },
+    {
+        "details": [
+            "Amérique",
+            "Afrique",
+            "Asie",
+            "Europe"
+        ],
+        "nom": "Voyages"
+    }
+]

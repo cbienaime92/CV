@@ -1,0 +1,84 @@
+[
+    {
+        "details": [
+            "C#",
+            ".Net Core",
+            "JS",
+            "HTML",
+            "VueJs",
+            "Python",
+            "Bash"
+        ],
+        "nom": "Langages"
+    },
+    {
+        "details": [
+            "MySQL",
+            "PostgreSQL",
+            "MSSQL Server",
+            "MongoDB",
+            "Oracle"
+        ],
+        "nom": "BDD"
+    },
+    {
+        "details": [
+            "Tortoise",
+            "SVN",
+            "GIT"
+        ],
+        "nom": "Gestionnaire de versions"
+    },
+    {
+        "details": [
+            "Vmware ESXi",
+            "vCenter,vSphere"
+        ],
+        "nom": "Virtualisation"
+    },
+    {
+        "details": [
+            "Active Directory",
+            "TCP/IP",
+            "DHCP",
+            "DNS",
+            "VPN",
+            "DMZ",
+            "http",
+            "VLAN"
+        ],
+        "nom": "Réseau"
+    },
+    {
+        "details": [
+            "Microsoft Windows 2008 / 2012R2 Server",
+            "Linux (Debian, RedHat"
+        ],
+        "nom": "OS"
+    },
+    {
+        "details": [
+            "IIS",
+            "Apache"
+        ],
+        "nom": "HTTP"
+    },
+    {
+        "details": [
+            "Docker",
+            "Jenkins",
+            "Gitlab",
+            "SonarQube",
+            "Kubernetes",
+            "Ansible"
+        ],
+        "nom": "DevOps"
+    },
+    {
+        "details": [
+            "JIRA",
+            "GLPI"
+        ],
+        "nom": "Gestion incidents"
+    }
+]
